@@ -8,7 +8,7 @@ const Card = ({onCardClick,todos,setTodos}) => {
   useEffect(() => {
     const getdata = async () => {
       try {
-        const res = await fetch("http://localhost:4000/api/todos");
+        const res = await fetch("https://todo-list-backend-lilac-seven.vercel.app/api/todos");
         const data = await res.json();
         // console.log(data.todos);
         const sortedData = data.todos.sort((a, b) => new Date(b.date) - new Date(a.date));

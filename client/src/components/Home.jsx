@@ -18,7 +18,7 @@ const Home = () => {
 
     const handleClick = async() => {
         try {
-            const response = await fetch(`http://localhost:4000/api/todos/${selectedTodo._id}`, {
+            const response = await fetch(`https://todo-list-backend-lilac-seven.vercel.app/api/todos/${selectedTodo._id}`, {
                 method: 'PUT',
                 headers: {
                   'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const Home = () => {
 
     const handleDeleteClick = async () => {
         try {
-            const response = await fetch(`http://localhost:4000/api/todos/${selectedTodo._id}`, {
+            const response = await fetch(`https://todo-list-backend-lilac-seven.vercel.app/api/todos/${selectedTodo._id}`, {
                 method: 'DELETE',
             });
 

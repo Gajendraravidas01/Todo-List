@@ -12,7 +12,7 @@ const Todo = () => {
     }
     try {
 
-      const response = await fetch("http://localhost:4000/api/todos",{
+      const response = await fetch("https://todo-list-backend-lilac-seven.vercel.app/api/todos",{
         method : "POST",
         headers : {
           'Content-Type': 'application/json',
